@@ -45,6 +45,16 @@
   <!-- Page Title -->
 
   <title>KiwiiToys</title>
+  <script>
+    function mostrarFechaYTiempo() {
+        var span = document.getElementById("fechaYTiempo");
+        var fechaActual = new Date();
+        var opciones = { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', hour12:true};
+        span.textContent = fechaActual.toLocaleDateString('es-ES', opciones);
+    }
+
+    window.onload = mostrarFechaYTiempo;
+</script>
 
 
 </head>
@@ -79,7 +89,7 @@
                             </ul>
                         </nav>                        <div class="mt-5">
 
-                            <h3 class="fs-5 fw-bolder mb-0 border-bottom pb-4">Tú Carrito</h3>
+                            <h3 class="fs-5 fw-bolder mb-0 border-bottom pb-4">Pago Exitoso</h3>
 
                             <div class="table-responsive">
                                 <table class="table align-middle">
@@ -95,7 +105,6 @@
                                                 <div>
                                                     <h6 class="justify-content-between d-flex align-items-start mb-2">
                                                         S.H.FIGUARTS: Dragon Ball Super Super Hero - Son Goku - Super Hero Ver. (Reissue) [Bandai]
-                                                        <i class="ri-close-line ms-3"></i>
                                                     </h6>
 
                                                     <span class="d-block text-muted fw-bolder text-uppercase fs-9">ESCALA: 15CM / CANTIDAD: 1</span>
@@ -117,18 +126,17 @@
                         <div class="pb-4 border-bottom">
                             <div class="d-flex flex-column flex-md-row justify-content-md-between mb-4 mb-md-2">
                                 <div>
-                                    <p class="m-0 fw-bold fs-5">Total</p>
+                                    <p class="m-0 fw-bold fs-5">Pago Confirmado</p>
+                                    <span id="fechaYTiempo" class="text-muted small"></span>
                                 </div>
                                 <div>
                                     <p class="m-0 fs-5 fw-bold">$700</p>
-                                    <span class="text-muted small">Incluído IVA</span>
                                 </div>
-
                             </div>
                         </div>
                         <div class="py-4">
                             <div class="input-group mb-0">
-                                <a href="https://buy.stripe.com/test_aEUg0CfcwaxR7pCcMM" class="btn btn-dark w-100 text-center" role="button">Proceder a la compra</a>
+                                <a href="./category.html" class="btn btn-dark w-100 text-center" role="button">Seguir comprando</a>
                             </div>
                         </div>
                     </div>
