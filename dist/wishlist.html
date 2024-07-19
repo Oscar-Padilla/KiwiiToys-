@@ -178,10 +178,9 @@
                                             <p class="m-0 fs-5 fw-bold">$700</p>
                                         </div>
                                     </div>
-                                    <a href="./cart.html" class="btn btn-outline-dark w-100 text-center mt-4"
+                                    <a href="./cart.html" class="btn btn-dark w-100 text-center mt-4"
                                         role="button">Ver Carrito</a>
-                                    <a href="./checkout.html" class="btn btn-dark w-100 text-center mt-2"
-                                        role="button">Proceder con la compra</a>
+                                   
                                 </div>
                                 <!-- / Cart Summary-->
                             </div>
@@ -487,14 +486,14 @@
                 <div class="d-flex justify-content-between items-center pt-5 pb-4 flex-column flex-lg-row">
                     <div class="d-flex justify-content-end align-items-center mt-4 mt-lg-0 flex-column flex-md-row">
     
-                        <!-- Filter Trigger-->
-                        <button
-                            class="btn bg-light p-3 me-md-3 d-flex align-items-center fs-7 lh-1 w-100 mb-2 mb-md-0 w-md-auto "
-                            type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasFilters"
-                            aria-controls="offcanvasFilters">
-                            <i class="ri-equalizer-line me-2"></i> Filtros
-                        </button>
-                        <!-- / Filter Trigger-->
+                       <!-- Filter Trigger-->
+                    <button
+                    class="btn bg-light p-3 me-md-3 d-flex align-items-center fs-7 lh-1 w-100 mb-2 mb-md-0 w-md-auto "
+                    type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasFilters"
+                    aria-controls="offcanvasFilters">
+                    <i class="ri-equalizer-line me-2"></i> Filtros
+                </button>
+                <!-- / Filter Trigger-->
     
                         <!-- Sort Options-->
                         <select class="form-select form-select-sm border-0 bg-light p-3 pe-5 lh-1 fs-7">
@@ -589,7 +588,197 @@
             </div>
         </div>
     </footer> <!-- / Footer-->
+<!-- Offcanvas Imports-->
+    <!-- Filters Offcanvas-->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasFilters" aria-labelledby="offcanvasFiltersLabel">
+        <div class="offcanvas-header pb-0 d-flex align-items-center">
+            <h5 class="offcanvas-title" id="offcanvasFiltersLabel">Filtros de Categoria</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="d-flex flex-column justify-content-between w-100 h-100">
 
+                <!-- Filters-->
+                <div>
+
+                    <!-- Price Filter -->
+                    <div class="py-4 widget-filter widget-filter-price border-top">
+                        <a class="small text-body text-decoration-none text-secondary-hover transition-all transition-all fs-6 fw-bolder d-block collapse-icon-chevron"
+                            data-bs-toggle="collapse" href="#filter-modal-price" role="button" aria-expanded="true"
+                            aria-controls="filter-modal-price">
+                            Price
+                        </a>
+                        <div id="filter-modal-price" class="collapse show">
+                            <div class="filter-price mt-6"></div>
+                            <div class="d-flex justify-content-between align-items-center mt-7">
+                                <div class="input-group mb-0 me-2 border">
+                                    <span class="input-group-text bg-transparent fs-7 p-2 text-muted border-0">$</span>
+                                    <input type="number" min="00" max="1000" step="1"
+                                        class="filter-min form-control-sm border flex-grow-1 text-muted border-0">
+                                </div>
+                                <div class="input-group mb-0 ms-2 border">
+                                    <span class="input-group-text bg-transparent fs-7 p-2 text-muted border-0">$</span>
+                                    <input type="number" min="00" max="1000" step="1"
+                                        class="filter-max form-control-sm flex-grow-1 text-muted border-0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / Price Filter -->
+
+                    <!-- Brands Filter -->
+                    <div class="py-4 widget-filter border-top">
+                        <a class="small text-body text-decoration-none text-secondary-hover transition-all transition-all fs-6 fw-bolder d-block collapse-icon-chevron"
+                            data-bs-toggle="collapse" href="#filter-modal-brands" role="button" aria-expanded="true"
+                            aria-controls="filter-modal-brands">
+                            Licencia
+                        </a>
+                        <div id="filter-modal-brands" class="collapse show">
+                            <div class="input-group my-3 py-1">
+                                <input type="text" class="form-control py-2 filter-search rounded" placeholder="Search"
+                                    aria-label="Search">
+                                <span
+                                    class="input-group-text bg-transparent p-2 position-absolute top-10 end-0 border-0 z-index-20"><i
+                                        class="ri-search-2-line text-muted"></i></span>
+                            </div>
+                            <div class="simplebar-wrapper">
+                                <div class="filter-options" data-pixr-simplebar>
+                                    <div class="form-group form-check-custom mb-1">
+                                        <input type="checkbox" class="form-check-input" id="filter-brands-modal-0">
+                                        <label
+                                            class="form-check-label fw-normal text-body flex-grow-1 d-flex align-items-center"
+                                            for="filter-brands-modal-0">Dragon Ball <span
+                                                class="text-muted ms-1 fs-9">(21)</span></label>
+                                    </div>
+                                    <div class="form-group form-check-custom mb-1">
+                                        <input type="checkbox" class="form-check-input" id="filter-brands-modal-1">
+                                        <label
+                                            class="form-check-label fw-normal text-body flex-grow-1 d-flex align-items-center"
+                                            for="filter-brands-modal-1">Sailor Moon <span
+                                                class="text-muted ms-1 fs-9">(13)</span></label>
+                                    </div>
+                                    <div class="form-group form-check-custom mb-1">
+                                        <input type="checkbox" class="form-check-input" id="filter-brands-modal-2">
+                                        <label
+                                            class="form-check-label fw-normal text-body flex-grow-1 d-flex align-items-center"
+                                            for="filter-brands-modal-2">One Piece <span
+                                                class="text-muted ms-1 fs-9">(18)</span></label>
+                                    </div>
+                                    <div class="form-group form-check-custom mb-1">
+                                        <input type="checkbox" class="form-check-input" id="filter-brands-modal-3">
+                                        <label
+                                            class="form-check-label fw-normal text-body flex-grow-1 d-flex align-items-center"
+                                            for="filter-brands-modal-3">Naruto <span
+                                                class="text-muted ms-1 fs-9">(25)</span></label>
+                                    </div>
+                                    <div class="form-group form-check-custom mb-1">
+                                        <input type="checkbox" class="form-check-input" id="filter-brands-modal-4">
+                                        <label
+                                            class="form-check-label fw-normal text-body flex-grow-1 d-flex align-items-center"
+                                            for="filter-brands-modal-4">Jujutsu Kaisen <span
+                                                class="text-muted ms-1 fs-9">(11)</span></label>
+                                    </div>
+                                    <div class="form-group form-check-custom mb-1">
+                                        <input type="checkbox" class="form-check-input" id="filter-brands-modal-5">
+                                        <label
+                                            class="form-check-label fw-normal text-body flex-grow-1 d-flex align-items-center"
+                                            for="filter-brands-modal-5">Boku no Hero <span
+                                                class="text-muted ms-1 fs-9">(19)</span></label>
+                                    </div>
+                                    <div class="form-group form-check-custom mb-1">
+                                        <input type="checkbox" class="form-check-input" id="filter-brands-modal-6">
+                                        <label
+                                            class="form-check-label fw-normal text-body flex-grow-1 d-flex align-items-center"
+                                            for="filter-brands-modal-6">Demon Slayer <span
+                                                class="text-muted ms-1 fs-9">(24)</span></label>
+                                    </div>
+                                    <div class="form-group form-check-custom mb-1">
+                                        <input type="checkbox" class="form-check-input" id="filter-brands-modal-7">
+                                        <label
+                                            class="form-check-label fw-normal text-body flex-grow-1 d-flex align-items-center"
+                                            for="filter-brands-modal-7">Kaijuuu No.8 <span
+                                                class="text-muted ms-1 fs-9">(11)</span></label>
+                                    </div>
+                                    <div class="form-group form-check-custom mb-1">
+                                        <input type="checkbox" class="form-check-input" id="filter-brands-modal-8">
+                                        <label
+                                            class="form-check-label fw-normal text-body flex-grow-1 d-flex align-items-center"
+                                            for="filter-brands-modal-8">Frieren <span
+                                                class="text-muted ms-1 fs-9">(2)</span></label>
+                                    </div>
+                                    <div class="form-group form-check-custom mb-1">
+                                        <input type="checkbox" class="form-check-input" id="filter-brands-modal-9">
+                                        <label
+                                            class="form-check-label fw-normal text-body flex-grow-1 d-flex align-items-center"
+                                            for="filter-brands-modal-9">Marvel <span
+                                                class="text-muted ms-1 fs-9">(24)</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / Brands Filter -->
+
+                    <!-- Sizes Filter -->
+                    <div class="py-4 widget-filter border-top">
+                        <a class="small text-body text-decoration-none text-secondary-hover transition-all transition-all fs-6 fw-bolder d-block collapse-icon-chevron"
+                            data-bs-toggle="collapse" href="#filter-modal-sizes" role="button" aria-expanded="true"
+                            aria-controls="filter-modal-sizes">
+                            Escala
+                        </a>
+                        <div id="filter-modal-sizes" class="collapse show">
+                            <div class="filter-options mt-3">
+                                <div class="form-group d-inline-block mr-2 mb-2 form-check-bg form-check-custom">
+                                    <input type="checkbox" class="form-check-bg-input" id="filter-sizes-modal-0">
+                                    <label class="form-check-label fw-normal" for="filter-sizes-modal-0">30cm</label>
+                                </div>
+                                <div class="form-group d-inline-block mr-2 mb-2 form-check-bg form-check-custom">
+                                    <input type="checkbox" class="form-check-bg-input" id="filter-sizes-modal-1">
+                                    <label class="form-check-label fw-normal" for="filter-sizes-modal-1">25cm</label>
+                                </div>
+                                <div class="form-group d-inline-block mr-2 mb-2 form-check-bg form-check-custom">
+                                    <input type="checkbox" class="form-check-bg-input" id="filter-sizes-modal-2">
+                                    <label class="form-check-label fw-normal" for="filter-sizes-modal-2">20cm</label>
+                                </div>
+                                <div class="form-group d-inline-block mr-2 mb-2 form-check-bg form-check-custom">
+                                    <input type="checkbox" class="form-check-bg-input" id="filter-sizes-modal-3">
+                                    <label class="form-check-label fw-normal" for="filter-sizes-modal-3">18cm</label>
+                                </div>
+                                <div class="form-group d-inline-block mr-2 mb-2 form-check-bg form-check-custom">
+                                    <input type="checkbox" class="form-check-bg-input" id="filter-sizes-modal-4">
+                                    <label class="form-check-label fw-normal" for="filter-sizes-modal-4">15cm</label>
+                                </div>
+                                <div class="form-group d-inline-block mr-2 mb-2 form-check-bg form-check-custom">
+                                    <input type="checkbox" class="form-check-bg-input" id="filter-sizes-modal-5">
+                                    <label class="form-check-label fw-normal" for="filter-sizes-modal-5">12cm</label>
+                                </div>
+                                <div class="form-group d-inline-block mr-2 mb-2 form-check-bg form-check-custom">
+                                    <input type="checkbox" class="form-check-bg-input" id="filter-sizes-modal-6">
+                                    <label class="form-check-label fw-normal" for="filter-sizes-modal-6">10cm</label>
+                                </div>
+                                <div class="form-group d-inline-block mr-2 mb-2 form-check-bg form-check-custom">
+                                    <input type="checkbox" class="form-check-bg-input" id="filter-sizes-modal-7">
+                                    <label class="form-check-label fw-normal" for="filter-sizes-modal-7">6cm</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- / Sizes Filter -->
+
+                        <!-- Colour Filter -->
+                        
+                        <!-- / Colour Filter -->
+                    </div>
+                    <!-- / Filters-->
+
+                    <!-- Filter Button-->
+                    <div class="border-top pt-3">
+                        <a href="#" class="btn btn-dark mt-2 d-block hover-lift-sm hover-boxshadow"
+                            data-bs-dismiss="offcanvas" aria-label="Close">Hecho</a>
+                    </div>
+                    <!-- /Filter Button-->
+                </div>
+            </div>
+        </div>
 <!-- Theme JS -->
 <!-- Vendor JS -->
 <script src="./assets/js/vendor.bundle.js"></script>
